@@ -32,6 +32,7 @@ section{
     width: 400px;
     border-radius: 25%;
     background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    animation: animateCon 9s infinite ease-in;
 }
 .hello{
     color: rgba(206, 201, 201, 0.795);
@@ -45,8 +46,8 @@ section{
     height: 200px;
     width: 200px;
     position: absolute;
-    top: 40px;
-    left: 200px;
+    top: 4rem;
+    left: 15rem;
     border-radius: 25%;
     animation: animateSq 5s infinite ease-out;
     background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
@@ -55,8 +56,8 @@ section{
     height: 200px;
     width: 200px;
     position: absolute;
-    top: 430px;
-    left: 1150px;
+    top: 60vh;
+    left: 72vw;
     border-radius: 25%;
     animation: animateSq 5s infinite ease-in-out;
     background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
@@ -81,5 +82,17 @@ section{
     }
     100%{
         transform: scale(1.1);
+    }
+}
+
+@keyframes animateCon {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
